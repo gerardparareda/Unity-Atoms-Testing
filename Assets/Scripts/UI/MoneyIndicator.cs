@@ -8,16 +8,17 @@ using UnityAtoms.BaseAtoms;
 
 public class MoneyIndicator : MonoBehaviour
 {
-    private TextMeshPro _textMeshPro;
+    [SerializeField] private TextMeshProUGUI textMeshPro;
+    [SerializeField] private IntReference playerMoney;
 
-    // Update is called once per frame
-    void Start()
+    public void Start()
     {
-        _textMeshPro = GetComponent<TextMeshPro>();
+        playerMoney.GetEvent<IntEvent>().Register(ChangeMoneyAmount);
+        ChangeMoneyAmount(playerMoney.Value);
     }
 
     public void ChangeMoneyAmount(int amount)
     {
-        _textMeshPro.text = amount.ToString() + "€";
+        textMeshPro.text = amount + "€";
     }
 }

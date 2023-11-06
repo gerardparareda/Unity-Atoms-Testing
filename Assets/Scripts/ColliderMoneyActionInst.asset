@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c0f4f7cb20545fc80d685f628b06d3, type: 3}
-  m_Name: MoneyTriggerEvent
+  m_Script: {fileID: 11500000, guid: 555738f1fcba6534492b96f1bf9ce5a7, type: 3}
+  m_Name: ColliderMoneyActionInst
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _replayBufferSize: 1
-  _inspectorRaiseValue: {fileID: 0}
+  money:
+    _usage: 2
+    _value: 150
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 0763a10535a64554db6e4d4551006f42, type: 2}
+    _variableInstancer: {fileID: 0}

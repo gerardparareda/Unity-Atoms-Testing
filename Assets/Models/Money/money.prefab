@@ -177,7 +177,6 @@ GameObject:
   - component: {fileID: 4267994804662270630}
   - component: {fileID: 9216695263086988132}
   - component: {fileID: 1995222838555898627}
-  - component: {fileID: 447940682482586724}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -250,27 +249,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &447940682482586724
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6511032443837278379}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8971257474313340955
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: money
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f135d09b00fb29d40bc14a570700658d, type: 3}
+      propertyPath: m_TagString
+      value: Money
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: f135d09b00fb29d40bc14a570700658d, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.047
@@ -432,41 +414,34 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f135d09b00fb29d40bc14a570700658d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9189314610705858189}
+      addedObject: {fileID: 6376953935356802956}
   m_SourcePrefab: {fileID: 100100000, guid: f135d09b00fb29d40bc14a570700658d, type: 3}
 --- !u!1 &6986269198568623024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f135d09b00fb29d40bc14a570700658d, type: 3}
   m_PrefabInstance: {fileID: 7797242800006936289}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9189314610705858189
-MonoBehaviour:
+--- !u!135 &6376953935356802956
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6986269198568623024}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a1de40e6be5415db15c966a482000d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 07222bed20d5a6e4da684ee928e57d34, type: 2}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
-  _selectGameObjectReference: {fileID: 0}
-  _eventWithGameObjectReference:
-    _usage: 0
-    _event: {fileID: 0}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
-  _triggerOnEnter: 1
-  _triggerOnExit: 0
-  _triggerOnStay: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &7764177714258366730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f135d09b00fb29d40bc14a570700658d, type: 3}
