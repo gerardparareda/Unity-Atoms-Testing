@@ -4,8 +4,8 @@ using UnityAtoms.BaseAtoms;
 [CreateAssetMenu(menuName = "Unity Atoms/Money Logger")]
 public class MoneyLogger : IntAction
 {
-    public override void Do(int money)
+    public override void Do()
     {
-        Debug.Log("€: " + money);
+        Debug.Log("Event raised");
     }
 }

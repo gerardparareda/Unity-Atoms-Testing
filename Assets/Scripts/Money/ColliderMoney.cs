@@ -6,7 +6,7 @@ using UnityAtoms.BaseAtoms;
 using UnityEditor.UI;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Unity Atoms/Examples/Money")]
+[CreateAssetMenu(menuName = "Unity Atoms/Actions/Examples/Money")]
 public class CollidedMoney : ColliderAction
 {
     [SerializeField] private IntReference money;
@@ -15,8 +15,7 @@ public class CollidedMoney : ColliderAction
     {
         if (other.CompareTag("Money"))
         {
-            money.Value += 10;
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<Money>().StartPickupAnimation();
         }
     }
 }

@@ -1,11 +1,24 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "5cc97c7f0085624b6ef57853d70b404440060cef"
+    },
     "com.unity-atoms.unity-atoms": {
       "version": "https://github.com/unity-atoms/unity-atoms.git#master",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "37ead24dbb86e45a2519ba8fb8a4da0f6dfb67b5"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.burst": {
       "version": "1.8.9",
